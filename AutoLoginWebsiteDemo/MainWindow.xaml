@@ -2,25 +2,33 @@
        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
           xmlns:winform="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
-        Title="测试" Height="600" Width="800" >
+        Title="测试" WindowState="Maximized" >
     <Grid>
-        <Grid.RowDefinitions>
+        <!--<Grid.RowDefinitions>
             <RowDefinition Height="50"/>
             <RowDefinition Height="50"/>
             <RowDefinition Height="*"/>
             <RowDefinition />
-        </Grid.RowDefinitions>
+        </Grid.RowDefinitions>-->
 
         <!--<cef:WpfCefBrowser  x:Name="Browser" Grid.Row="2"  FocusVisualStyle="{x:Null}" />-->
-        <WindowsFormsHost  Margin="10" Grid.Row="3" >
-            <winform:WebBrowser x:Name="Browser" ScriptErrorsSuppressed="True" NewWindow="webPage_NewWindow" DocumentCompleted="Browser_DocumentCompleted" />
+        <WindowsFormsHost x:Name="wfh2"  Margin="10" Grid.Row="3" Visibility="Collapsed">
+            <winform:WebBrowser x:Name="Browser" ScriptErrorsSuppressed="True"  NewWindow="webPage_NewWindow" />
         </WindowsFormsHost>
-        <StackPanel Orientation="Horizontal" VerticalAlignment="Center" TextBlock.FontSize="20">
+
+        <WindowsFormsHost  x:Name="wfh1"  Margin="0" Grid.Row="0" Grid.RowSpan="3"  Width="200" Height="200">
+            <winform:PictureBox  x:Name="pictureBox1"  Dock="Fill"  >
+                
+            </winform:PictureBox>
+            <!--<Grid Grid.Row="3" Background="Red"/>-->
+            <!--<winform:WebBrowser   x:Name="BrowserInit" ScriptErrorsSuppressed="True"  />-->
+        </WindowsFormsHost>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Center" TextBlock.FontSize="20" Visibility="Collapsed">
             <Button Content="加载" Width="100" Height="40" Click="Button_Click"/>
             <TextBlock Text="   网址：" VerticalAlignment="Center"/>
             <TextBox x:Name="tbHtml" Width="649" Height="40" Margin="10,5,0,5" Text="" VerticalContentAlignment="Center" FontSize="18"/>
         </StackPanel>
-        <StackPanel Orientation="Horizontal" Grid.Row="1" VerticalAlignment="Center" TextBlock.FontSize="20">
+        <StackPanel Orientation="Horizontal" Grid.Row="1" VerticalAlignment="Center" TextBlock.FontSize="20" Visibility="Collapsed">
             <TextBlock Text="用户："/>
             <TextBox Text="" Width="100" x:Name="txtUserId"/>
             <TextBlock Text="  密码："/>

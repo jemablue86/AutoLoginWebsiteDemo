@@ -10,3 +10,4 @@ d:\documents\visual studio 2013\Projects\AutoLoginWebsiteDemo\AutoLoginWebsiteDe
 d:\documents\visual studio 2013\Projects\AutoLoginWebsiteDemo\AutoLoginWebsiteDemo\bin\Debug\AutoLoginWebsiteDemo.pdb
 d:\documents\visual studio 2013\Projects\AutoLoginWebsiteDemo\AutoLoginWebsiteDemo\obj\Debug\AutoLoginWebsiteDemo.exe
 d:\documents\visual studio 2013\Projects\AutoLoginWebsiteDemo\AutoLoginWebsiteDemo\obj\Debug\AutoLoginWebsiteDemo.pdb
+D:\Documents\Visual Studio 2013\Projects\AutoLoginWebsiteDemo\AutoLoginWebsiteDemo\bin\Debug\AutoLoginWebsiteDemo.exe.config
