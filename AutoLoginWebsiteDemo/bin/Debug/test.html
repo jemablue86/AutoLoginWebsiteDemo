@@ -1,0 +1,118 @@
+ 
+ 
+ 
+ 
+ 
+ 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" class="dialog-html">
+	<head>
+		<meta name="myie"  http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+		<title>用户登录</title>
+		<link rel="icon" href="/common/css/images/ico/favicon.ico" type="image/x-icon" ></link>
+		<link rel="shortcut icon" href="/common/css/images/ico/favicon.ico" type="image/x-icon" ></link> 
+		<link rel="stylesheet" href="/common/css/frame.css" type="text/css"></link>
+		<script type="text/javascript">
+		// 取项目对应的ContextPath、皮肤、语言
+		var path = "";
+		var color = 'red';
+		var language = 'zh_CN';
+		</script>
+		<script type="text/javascript" src="/common/js/jquery/js/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="/common/js/locale/lang-default.js"></script>
+		<script type="text/javascript" src="/common/js/locale/lang-zh_CN.js"></script>
+		<script type="text/javascript" src="/common/js/cms.const.js"></script>
+		<script type="text/javascript" src="/common/js/cms.util.js"></script>
+		<script type="text/javascript" src="/common/js/tmcp.js"></script>
+		<script type="text/javascript" src="/common/js/common.js"></script>
+		<script type="text/javascript" src="/login.js"></script>
+		<script type="text/javascript" src="/common/js/md5.js"></script>
+ 
+ 
+		<script type="text/javascript">
+			var result ='YES';
+			var basePath = 'http://10.50.171.146:80';
+			var refresh_remain_day = 'YES';
+		    if(result!='YES'){
+		        window.document.location = '/license!licenseUpload.action';
+		    }else{
+		    	if (refresh_remain_day=="YES") {
+						
+				}
+		    }
+			// 隐藏右键菜单
+			document.oncontextmenu = function() {
+				return false;
+ 			}
+ 			function uploadNow(){
+ 				window.document.location = '/license!licenseUpload.action';
+ 			}
+ 			function showLicenseInformation(){
+		        if (refresh_remain_day=="YES"){
+		        	var remainingDays = '30387';
+		        	if(remainingDays =='' || remainingDays =='null' || remainingDays =='NULL' || remainingDays>3){
+			            return;
+			        }
+			        var licenseObj = document.getElementById("licensediv");
+			        if(licenseObj!=null){
+			        	var context = "	系统试运行时间还剩余天数:";
+		            	licenseObj.innerHTML = context + "  <FONT size='50' >"+remainingDays+"</FONT>  天，请尽快<a href='javascript:void(0);' onclick='uploadNow()'>上传</a>新的License文件。";
+			        }
+		        }
+			}
+		</script>
+	</head>
+<body onLoad="showLicenseInformation();" class='login-body' style="body{background:url(about:blank) fixed};">
+<div class="login-background">
+	<div class="logo-panel"></div>
+	<div class="login-right-panel">
+		<form id="LoginForm" name="LoginForm" class="login-form" method="post">
+			<p>
+				<label>用户名：</label>
+				<span class="editbox">
+					<span class="editbox-left"></span>
+					<span class="editbox-middle">
+						<input id="name"  name="name" value="admin"/>
+					</span>
+					<span id="delName" class="editbox-delete-button"></span>
+					<span class="editbox-right"></span>
+				</span>
+			</p>
+			<p>
+				<label>密码：</label>
+				<span class="editbox">
+					<span class="editbox-left"></span>
+					<span class="editbox-middle">
+						<input id="pwd" name="pwd" type="password" value=""/>
+					</span>
+					<span id="delPwd" class="editbox-delete-button"></span>
+					<span class="editbox-right"></span>
+				</span>
+			</p>
+			<p>
+				<label>登录到：</label>
+				<span class="editbox">
+					<span class="editbox-left"></span>
+					<span class="editbox-middle">
+						<input type="hidden" id="clientType" name="clientType"/>
+						<input id="selectedInput" name="LoginText" readonly="readonly"/>
+						<span class="selectbox">
+							<!--<a clientType=0>综合平台</a>-->
+							<a clientType=CLIENT_TYPE_OPERATE >控制客户端</a>
+							<a clientType=CLIENT_TYPE_CONFIG >配置客户端</a>
+							
+						</span>
+					</span>
+					<span class="editbox-dropdown-button"></span>
+					<span class="editbox-right"></span>
+				</span>
+			</p>
+			<p><span class="login-button" onclick="LoginIn();">登录</span></p>
+		</form>
+		<div class="login-version">v3.2.1 build20160722 172005</div>
+	</div>
+</div>
+ 
+ 
+</body>	    
+</html>

@@ -1,0 +1,12 @@
+d:\documents\visual studio 2013\Projects\AutoLoginWebsiteDemo\AutoLoginWebsiteDemo\obj\Debug\AutoLoginWebsiteDemo.csprojResolveAssemblyReference.cache
+d:\documents\visual studio 2013\Projects\AutoLoginWebsiteDemo\AutoLoginWebsiteDemo\obj\Debug\App.g.cs
+d:\documents\visual studio 2013\Projects\AutoLoginWebsiteDemo\AutoLoginWebsiteDemo\obj\Debug\AutoLoginWebsiteDemo_MarkupCompile.cache
+d:\documents\visual studio 2013\Projects\AutoLoginWebsiteDemo\AutoLoginWebsiteDemo\obj\Debug\MainWindow.baml
+d:\documents\visual studio 2013\Projects\AutoLoginWebsiteDemo\AutoLoginWebsiteDemo\obj\Debug\MainWindow.g.cs
+d:\documents\visual studio 2013\Projects\AutoLoginWebsiteDemo\AutoLoginWebsiteDemo\obj\Debug\AutoLoginWebsiteDemo.g.resources
+d:\documents\visual studio 2013\Projects\AutoLoginWebsiteDemo\AutoLoginWebsiteDemo\obj\Debug\AutoLoginWebsiteDemo.Properties.Resources.resources
+d:\documents\visual studio 2013\Projects\AutoLoginWebsiteDemo\AutoLoginWebsiteDemo\obj\Debug\AutoLoginWebsiteDemo.csproj.GenerateResource.Cache
+d:\documents\visual studio 2013\Projects\AutoLoginWebsiteDemo\AutoLoginWebsiteDemo\bin\Debug\AutoLoginWebsiteDemo.exe
+d:\documents\visual studio 2013\Projects\AutoLoginWebsiteDemo\AutoLoginWebsiteDemo\bin\Debug\AutoLoginWebsiteDemo.pdb
+d:\documents\visual studio 2013\Projects\AutoLoginWebsiteDemo\AutoLoginWebsiteDemo\obj\Debug\AutoLoginWebsiteDemo.exe
+d:\documents\visual studio 2013\Projects\AutoLoginWebsiteDemo\AutoLoginWebsiteDemo\obj\Debug\AutoLoginWebsiteDemo.pdb
